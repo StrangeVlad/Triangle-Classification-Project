@@ -24,20 +24,26 @@ const getTriangleAngleType = (a, b, c) => {
 
   if (angleA_deg === 90 || angleB_deg === 90 || angleC_deg === 90) {
     resultAngleType.textContent = "Right Triangle!";
+    resultAngleType.style.display = "block";
   } else if (angleA_deg < 90 && angleB_deg < 90 && angleC_deg < 90) {
     resultAngleType.textContent = "Acute Triangle!";
+    resultAngleType.style.display = "block";
   } else {
     resultAngleType.textContent = "Obtuse Triangle!";
+    resultAngleType.style.display = "block";
   }
 };
 
 const getTriangleType = (a, b, c) => {
   if (a === b && b === c) {
     resultType.textContent = "Equilateral Triangle!";
+    resultType.style.display = "block";
   } else if (a === b || b === c || c === a) {
     resultType.textContent = "Isosceles Triangle!";
+    resultType.style.display = "block";
   } else {
     resultType.textContent = "Scalene Triangle!";
+    resultType.style.display = "block";
   }
 };
 
